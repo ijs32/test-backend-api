@@ -1,0 +1,25 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Ian Silber",
+  "email": "ian@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+###
+
+POST http://localhost:3000/positions.json
+Content-Type: application/json
+
+{
+  "asset": "DOGE",
+  "amount": 100,
+  "user_id": 1
+}
+
+###
+
+GET http://localhost:3000/positions/6.json
+Content-Type: application/json
